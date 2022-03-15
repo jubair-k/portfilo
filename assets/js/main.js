@@ -109,6 +109,19 @@ modalCloses.forEach(modalClose => {
 // });
 
 /*==================== TESTIMONIAL ====================*/
+$(document).ready(function(){
+    setInterval(()=> slideWidth=$('.testimonial__content').width(),1000)
+    //slideWidth=$('.testimonial__content').width();
+    function moveNext(){
+        $('.testimonial__wraper').animate({left: -slideWidth},1000,function(){
+            $('.testimonial__wraper').css('left','0')
+            $('.testimonial__wraper').append($('.testimonial__content').first())
+            $('.testimonial__wraper').clearQueue()
+        })
+    }
+
+    setInterval(()=> moveNext(),1000)
+})
 
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
@@ -179,3 +192,5 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/* ============================ ============================================*/ 
