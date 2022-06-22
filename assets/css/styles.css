@@ -515,34 +515,22 @@ img{
     width: 80%;
 }
 .skills__js{
-    width: 60%;
-}
-.skills__react{
     width: 85%;
+}
+.skills__jq{
+    width: 80%;
 }
 
 .skills__php{
     width: 80%;
 }
-.skills__node{
+.skills__laravel{
+    width: 50%;
+}
+.skills__mysql{
     width: 70%;
 }
-.skills__firebase{
-    width: 90%;
-}
-.skills__python{
-    width: 55%;
-}
 
-.skills__figma{
-    width: 90%;
-}
-.skills__sketch{
-    width: 85%;
-}
-.skills__photoshop{
-    width: 85%;
-}
 
 .skills__close .skills__list{
     height: 0;
