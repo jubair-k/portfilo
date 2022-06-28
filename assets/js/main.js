@@ -94,20 +94,6 @@ modalCloses.forEach(modalClose => {
 })
 
 
-/*==================== PORTFOLIO SWIPER  ====================*/
-// let swiper = new Swiper('.portfolio__container',{
-//     cssMode:true,
-//     navigation:{
-//         nextE1:'.swiper-button-next',
-//         prevE1:'.swiper-button-prev',
-//     },
-//     pagination:{
-//         e1:'.swiper-pagination'
-//     },
-//     mousewheel:true,
-//     keyboard:true,
-// });
-
 /*==================== TESTIMONIAL ====================*/
 $(document).ready(function(){
     setInterval(()=> slideWidth=$('.testimonial__content').width(),1000)
@@ -193,4 +179,10 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-/* ============================ ============================================*/ 
+/* ============================ click scroll up Button ============================================*/ 
+let scrollupBtn=document.getElementById("scroll-up");
+scrollupBtn.addEventListener('click',function(e){
+    e.preventDefault();
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+})
+
